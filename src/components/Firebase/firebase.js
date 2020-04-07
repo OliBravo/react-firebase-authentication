@@ -2,13 +2,13 @@ import app from "firebase/app";
 import "firebase/auth";
 
 const config = {
-    apiKey: "AIzaSyBx3VzXf2AvkUuOxyK_MUNdgPF8zhqsR7U",
-    authDomain: "robin-tutorial-3803e.firebaseapp.com",
-    databaseURL: "https://robin-tutorial-3803e.firebaseio.com",
-    projectId: "robin-tutorial-3803e",
-    storageBucket: "robin-tutorial-3803e.appspot.com",
-    messagingSenderId: "904243751532",
-    appId: "1:904243751532:web:78b6c0640622632911c649"
+    apiKey: process.env.REACT_APP_APIKEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID
   };
 
 class Firebase {
